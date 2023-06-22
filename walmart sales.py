@@ -1,5 +1,3 @@
-# Importing all the libraries
-
 import pandas as pd
 import numpy as np
 import warnings
@@ -166,7 +164,6 @@ sample_submission.to_csv('submission_2.csv',index=False)
 preds1=pd.read_csv('submission_2.csv')
 preds1
 
-#################
 # fitting the model with Hyperparameter Overfitting
 RF = RandomForestRegressor(n_estimators=58, max_depth=27, max_features=6, min_samples_split=3, min_samples_leaf=1)
 RF.fit(train_inputs,train_targets)
