@@ -1,4 +1,3 @@
-
 # manipulation data
 import pandas as pd
 import numpy as np
@@ -25,14 +24,12 @@ train.shape
 train.info()
 
 # show the numerical values
-
 num_columns = [f for f in train.columns if train.dtypes[f] != 'object']
 num_columns.remove('Purchase')
 num_columns.remove('User_ID')
 num_columns
 
 # show the categorical values
-
 cat_columns = [f for f in train.columns if train.dtypes[f] == 'object']
 cat_columns
 
@@ -103,9 +100,7 @@ data_final
 data_final.dtypes
 
 #splitting the data
-
 from sklearn.model_selection import train_test_split
-
 
 x=data_final.drop('Purchase',axis=1)
 y=data_final.Purchase
@@ -128,7 +123,7 @@ lm = LinearRegression()
 lm.fit(x_train, y_train)
 print(lm.fit(x_train, y_train))
 
-#LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
+LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
 
 print('Intercept parameter:', lm.intercept_)
 coeff_df = pd.DataFrame(lm.coef_, x.columns, columns=['Coefficient'])
