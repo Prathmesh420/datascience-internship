@@ -8,7 +8,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import mean_squared_error
 
-df = pd.read_csv("D:/CSV Files/adult.csv")
+df = pd.read_csv("C:/CSV Files/adult.csv")
 
 rf = RandomForestClassifier(random_state=1)
 lr = LogisticRegression(random_state=1)
