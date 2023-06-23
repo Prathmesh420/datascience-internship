@@ -2,14 +2,13 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
 import warnings
 warnings.filterwarnings('ignore')
 
-data_train=pd.read_csv('D:/CSV Files/Network intrusion detection/Train_data.csv')
-data_test=pd.read_csv('D:/CSV Files/Network intrusion detection/Test_data.csv')
+data_train=pd.read_csv('C:/CSV Files/Network intrusion detection/Train_data.csv')
+data_test=pd.read_csv('C:/CSV Files/Network intrusion detection/Test_data.csv')
 
-data_train.head(5)
+data_train.head(10)
 
 data_train.shape
 
